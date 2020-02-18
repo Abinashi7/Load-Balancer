@@ -20,13 +20,17 @@ The weighted round robin load balancing algorithm allows to assign weights to ea
 receive a higher proportion of the job requests. For example, we have servers A,B amd C.
 
 • Server A can take 10 requests on average
+
 • Server B can handle 5 requests on average
+
 • Server C can handle 2 requests on average
 
 Next, assume that the load balancer receives 6 requests. The output could be:
 
 • 3 requests are sent to Server A
+
 • 2 requests are sent to Server B
+
 • 1 request is sent to Server C.
 
 This way, the weighted-Round-Robin algorithm distributes the incoming requests to each server's load-capacity.
